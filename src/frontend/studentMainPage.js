@@ -10,13 +10,13 @@ import styles from '../style';
 export default class StudentMainPage extends React.Component{
   constructor(props){
     super(props);
+
   }
 
 
   render(){
     return(
       <View>
-      <Text>Studet page</Text>
       <StudentBox  studnetName = 'Mehrad Rezayazdi' />
       </View>
     );
