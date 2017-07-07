@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import config from '../backend/firebase';
+import * as firebase from 'firebase';
 import styles from '../style';
 
 
@@ -12,7 +13,17 @@ export default class LoginPage  extends React.Component{
       username:'',
       Password:''
     }
+    this._signIn = this._signIn.bind(this);
   }
+
+  _signIn(){
+firebase.auth().signInWithEmailAndPassword(this.state.username,this.state.Password).then(function(){
+  alert('success ');
+}).catch(function(e){
+  alert(e);
+})
+  }
+
   render(){
     return(
       <View>
@@ -40,6 +51,7 @@ export default class LoginPage  extends React.Component{
 
       <TouchableHighlight
         underlayColor = {'transparent'}
+        onPress = {this._signIn}
        >
      <View>
      <Text>
