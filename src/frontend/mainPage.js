@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import config from '../backend/firebase';
 import styles from '../style';
 
 
