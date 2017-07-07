@@ -17,7 +17,7 @@ export default class StudentMainPage extends React.Component{
     return(
       <View>
       <Text>Studet page</Text>
-      <StudentBox  studnetName = 'salam' />
+      <StudentBox  studnetName = 'Mehrad Rezayazdi' />
       </View>
     );
   }
