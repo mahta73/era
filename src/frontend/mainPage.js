@@ -17,14 +17,16 @@ export default class LoginPage  extends React.Component{
   }
 
   _signIn(){
+  const {navigate} = this.props.navigation;
 firebase.auth().signInWithEmailAndPassword(this.state.username,this.state.Password).then(function(){
-  alert('success ');
+  navigate('studentMainPage');
 }).catch(function(e){
   alert(e);
 })
   }
 
   render(){
+
     return(
       <View>
 
