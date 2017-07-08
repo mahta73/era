@@ -4,6 +4,7 @@ import { StackNavigator } from 'react-navigation';
 import StudentBox from './studentBox';
 import config from '../backend/firebase';
 import APLhistory from './APLhistory';
+import StudentMarkPage from './studentmark';
 import * as firebase from 'firebase';
 import styles from '../style';
 
@@ -20,6 +21,7 @@ export default class StudentMainPage extends React.Component{
       <View>
       <StudentBox  studnetName = 'Mehrad Rezayazdi' />
       <APLhistory studnetName = 'Mehrad Rezayazdi' />
+      <StudentMarkPage studnetName = 'Mehrad Rezayazdi' />
       </View>
     );
   }

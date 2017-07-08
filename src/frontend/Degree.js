@@ -27,6 +27,7 @@ export default class Degree extends Component {
 
         <TouchableHighlight
           onPress={() => navigate('Classes')}
+          underlayColor = {'transparent'}
           style={Styles.Button}
           >
               <Text
@@ -39,6 +40,7 @@ export default class Degree extends Component {
 
         <TouchableHighlight
           onPress={this._ChangePage}
+          underlayColor = {'transparent'}
           style={Styles.Button}
           >
               <Text
@@ -52,6 +54,7 @@ export default class Degree extends Component {
 
         <TouchableHighlight
           onPress={this._ChangePage}
+          underlayColor = {'transparent'}
           style={Styles.Button}
           >
               <Text
@@ -66,6 +69,7 @@ export default class Degree extends Component {
 
         <TouchableHighlight
           onPress={this._ChangePage}
+          underlayColor = {'transparent'}
           style={Styles.Button}
           >
               <Text

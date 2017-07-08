@@ -24,19 +24,16 @@ export default class APLhistory extends React.Component{
   const that = this;
   firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Present').on('value' , getPresent);
   function getPresent(data){
-    console.warn(data.val());
     that.setState({NumberOfPresent : data.val()});
   }
 
   firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Apsent').on('value' , getApsent);
   function getApsent(data){
-    console.warn(data.val());
     that.setState({NumberOfAbsent : data.val()});
   }
 
   firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').on('value' , getLate);
-  function getLate(data){
-    console.warn(data.val());
+  function getLate(data){ 
     that.setState({NumberOfLate : data.val()});
   }
 }
