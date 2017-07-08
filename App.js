@@ -4,9 +4,13 @@ import { StackNavigator } from 'react-navigation';
 import LoginPage from './src/frontend/mainPage';
 import config from './src/backend/firebase';
 import StudentMainPage from './src/frontend/studentMainPage';
+import Degree from './src/frontend/Degree';
+import Classes from './src/frontend/Classes';
 
 const ProjectHome = StackNavigator({
   Home:{screen: LoginPage},
-  studentMainPage:{screen: StudentMainPage}
+  Degree:{screen: Degree},
+  Classes:{screen: Classes},
+  studentMainPage:{screen: StudentMainPage},
 });
 export default ProjectHome;

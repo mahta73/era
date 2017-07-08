@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import config from '../backend/firebase';
-import * as firebase from 'firebase';
-import styles from '../style';
+import firebaseRef from '../backend/firebase';
+import Styles from '../style';
 
 
 export default class LoginPage  extends React.Component{
@@ -18,8 +17,8 @@ export default class LoginPage  extends React.Component{
 
   _signIn(){
   const {navigate} = this.props.navigation;
-firebase.auth().signInWithEmailAndPassword(this.state.username,this.state.Password).then(function(){
-  navigate('studentMainPage');
+  firebaseRef.auth().signInWithEmailAndPassword(this.state.username,this.state.Password).then(function(){
+  navigate('Degree');
 }).catch(function(e){
   alert(e);
 })
@@ -28,38 +27,36 @@ firebase.auth().signInWithEmailAndPassword(this.state.username,this.state.Passwo
   render(){
 
     return(
-      <View>
-
-
+      <View style={Styles.container}>
       <Image source = {require('../img/3855.png')} />
-
-
-      <Text>Era Registry</Text>
-
+      <Text style={Styles.headTxt}>Era Registry</Text>
 
       <TextInput
-     onChangeText={username => this.setState({username})}
+     onChangeText={(text) => this.setState({username: text})}
      placeholder = {"Username"}
      placeHolderTextColor = 'black'
+     style={Styles.inputStyle}
+
      />
 
 
       <TextInput
-      onChangeText={Password => this.setState({Password})}
+      onChangeText={(text) => this.setState({Password: text })}
       placeholder = {"Password"}
       secureTextEntry = {true}
       placeHolderTextColor = 'black'
+      style={Styles.inputStyle}
       />
+
 
       <TouchableHighlight
         underlayColor = {'transparent'}
-        onPress = {this._signIn}
-       >
-     <View>
-     <Text>
-      Sign in
-      </Text>
-      </View>
+        style={Styles.Button}
+        onPress={this._signIn}
+        >
+        <Text style={Styles.ButtonView} >
+          Login
+        </Text>
       </TouchableHighlight>
 
 

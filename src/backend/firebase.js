@@ -2,11 +2,13 @@ import * as firebase from "firebase";
 
 
 const config = {
-  apiKey: "<API_KEY>",
-  authDomain: "<PROJECT_ID>.firebaseapp.com",
-  databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-  storageBucket: "<BUCKET>.appspot.com",
+  apiKey: "******************",
+  authDomain: "*******************",
+  databaseURL: "****************",
+  projectId: "*****************",
+  storageBucket: "*******************",
+  messagingSenderId: "******************"
 };
 
-firebase.initializeApp(config);
-export default config;
+const firebaseRef = firebase.initializeApp(config);
+export default firebaseRef;
