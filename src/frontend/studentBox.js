@@ -67,7 +67,9 @@ alert('Late');
 }
   render(){
     return(
-      <View style={Styles.container}>
+      <View style={Styles.container2}>
+
+
       <Text>{this.props.studnetName}</Text>
 
       <TouchableHighlight
@@ -88,6 +90,7 @@ alert('Late');
       onPress = {this._late}
       ><Text>Late</Text>
       </TouchableHighlight>
+
       </View>
     );
   }

@@ -7,6 +7,13 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  container2:{
+    flex: 1,
+    backgroundColor: '#ebebef',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row'
+  },
   ButtonView : {
     color:'white',
     fontSize: 18,
