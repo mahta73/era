@@ -10,15 +10,22 @@ import Styles from '../style';
 import { StackNavigator } from 'react-navigation';
 
 export default class Classes extends Component {
+
+  constructor(props){
+    super(props);
+  }
+
   static navigationOptions = {
    title: 'classes',
  };
+ 
   render() {
     const {navigate} = this.props.navigation;
     return (
       <View style={Styles.container}>
 
         <TouchableHighlight
+          underlayColor = {'transparent'}
           onPress={()=>navigate('studentMainPage')}
           style={Styles.Button}
           >
@@ -31,6 +38,7 @@ export default class Classes extends Component {
         </TouchableHighlight>
 
         <TouchableHighlight
+          underlayColor = {'transparent'}
           onPress={this._ChangePage}
           style={Styles.Button}
           >
@@ -58,6 +66,7 @@ export default class Classes extends Component {
 
 
         <TouchableHighlight
+          underlayColor = {'transparent'}
           onPress={this._ChangePage}
           style={Styles.Button}
           >

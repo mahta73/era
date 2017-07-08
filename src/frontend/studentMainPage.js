@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'rea
 import { StackNavigator } from 'react-navigation';
 import StudentBox from './studentBox';
 import config from '../backend/firebase';
+import APLhistory from './APLhistory';
 import * as firebase from 'firebase';
 import styles from '../style';
 
@@ -18,6 +19,7 @@ export default class StudentMainPage extends React.Component{
     return(
       <View>
       <StudentBox  studnetName = 'Mehrad Rezayazdi' />
+      <APLhistory studnetName = 'Mehrad Rezayazdi' />
       </View>
     );
   }
