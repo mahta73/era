@@ -7,8 +7,9 @@ import config from '../backend/firebase';
 import APLhistory from './APLhistory';
 import studentmark from './studentmark';
 import APLhistorypage from './APLhistorypage'
-import markHistory from './markHistory';
+import Markhistory from './Markhistory';
 import Markpage from './Markpage';
+import Markhistorypage from './Markhistorypage';
 import * as firebase from 'firebase';
 
 import Styles from '../style';
@@ -18,7 +19,7 @@ const StudentMainPage = TabNavigator({
   APL: {screen: APL},
   APLhistory: {screen: APLhistorypage},
   Markpage: {screen: Markpage},
-  markHistory: {screen: markHistory},
+  Markhistorypage: {screen: Markhistorypage},
 
 
 },{
