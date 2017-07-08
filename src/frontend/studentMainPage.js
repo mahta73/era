@@ -1,28 +1,37 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StyleSheet,Button, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
+import { TabNavigator } from 'react-navigation';
 import StudentBox from './studentBox';
 import config from '../backend/firebase';
 import APLhistory from './APLhistory';
-import StudentMarkPage from './studentmark';
+import studentmark from './studentmark';
+import markHistory from './markHistory';
+
 import * as firebase from 'firebase';
-import styles from '../style';
+
+import Styles from '../style';
 
 
-export default class StudentMainPage extends React.Component{
-  constructor(props){
-    super(props);
+const StudentMainPage = TabNavigator({
+  StudentBox: {screen: StudentBox},
+  APLhistory: {screen: APLhistory},
+  studentmark: {screen: studentmark},
+  markHistory: {screen: markHistory},
 
-  }
 
-
-  render(){
-    return(
-      <View>
-      <StudentBox  studnetName = 'Mehrad Rezayazdi' />
-      <APLhistory studnetName = 'Mehrad Rezayazdi' />
-      <StudentMarkPage studnetName = 'Mehrad Rezayazdi' />
-      </View>
-    );
-  }
+},{
+  tabBarOptions: {
+    activeTintColor: '#8A2BE2',
+    labelStyle: {
+      fontSize: 13,
+      paddingBottom:10,
+    },
+    style: {
+      backgroundColor: '#87CEFA',
+    },
+  },
 }
+
+);
+
+export default  StudentMainPage ;

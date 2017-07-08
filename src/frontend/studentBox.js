@@ -1,9 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator,TabNavigator } from 'react-navigation';
+
 import config from '../backend/firebase';
 import * as firebase from 'firebase';
-import styles from '../style';
+import Styles from '../style';
+
+
+
+
+
 
 const database = firebase.database();
 
@@ -61,7 +67,7 @@ alert('Late');
 }
   render(){
     return(
-      <View>
+      <View style={Styles.container}>
       <Text>{this.props.studnetName}</Text>
 
       <TouchableHighlight

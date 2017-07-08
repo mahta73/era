@@ -5,7 +5,7 @@ import StudentBox from './studentBox';
 import config from '../backend/firebase';
 import APLhistory from './APLhistory';
 import * as firebase from 'firebase';
-import styles from '../style';
+import Styles from '../style';
 
 //path to the root
  //const firebaseRef = firebase.database().ref().child('Complain');
@@ -28,7 +28,7 @@ export default class StudentMarkPage extends React.Component{
 
   render(){
     return(
-      <View>
+      <View style={Styles.container}>
        <Text>{this.props.studnetName}</Text>
 
        <TextInput

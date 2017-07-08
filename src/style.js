@@ -37,6 +37,14 @@ const Styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
   },
+  Row: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  detailRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
 });
 
 export default Styles;
