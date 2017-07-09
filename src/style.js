@@ -120,7 +120,7 @@ scrollView:{
   borderColor: 'black',
   borderWidth: 1,
   width:100,
-  height:30,
+  height:40,
   marginRight:10,
 
 },
