@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
+import { StyleSheet,ScrollView, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import StudentBox from './studentBox';
 import config from '../backend/firebase';
@@ -26,9 +26,18 @@ firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.st
 }
 render(){
   return(
-    <View>
-    <Text>{this.props.studnetName}</Text>
-    <Text>{this.state.mark}</Text>
+    <View style={Styles.container2}>
+    <Text style={Styles.nameStyle}>
+     {this.props.studnetName}
+    </Text>
+      <ScrollView
+        style={Styles.scrollView}
+        horizontal={true}
+        >
+          <Text style={Styles.markHistoryView}>
+            {this.state.mark}
+          </Text>
+        </ScrollView>
     </View>
   );
 }

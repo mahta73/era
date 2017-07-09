@@ -111,6 +111,19 @@ const Styles = StyleSheet.create({
   alignItems:'center',
   justifyContent:'center',
 },
+markHistoryView:{
+  color:'#32CD32',
+  justifyContent:'center',
+  alignItems: 'center',
+},
+scrollView:{
+  borderColor: 'black',
+  borderWidth: 1,
+  width:100,
+  height:30,
+  marginRight:10,
+
+},
 
 });
 
