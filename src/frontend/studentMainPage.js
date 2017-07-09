@@ -22,6 +22,7 @@ const StudentMainPage = TabNavigator({
 
 
 },{
+  tabBarPosition: 'bottom',
   tabBarOptions: {
     activeTintColor: '#8A2BE2',
     labelStyle: {

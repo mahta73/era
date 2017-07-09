@@ -8,6 +8,9 @@ import Styles from '../style';
 export default class LoginPage  extends React.Component{
   constructor(props){
     super(props);
+    console.ignoredYellowBox = [
+         'Setting a timer'
+     ];
     this.state = {
       username:'',
       Password:''
@@ -32,6 +35,7 @@ export default class LoginPage  extends React.Component{
       <Text style={Styles.headTxt}>Era Registry</Text>
 
       <TextInput
+     underlineColorAndroid='transparent'
      onChangeText={(text) => this.setState({username: text})}
      placeholder = {"Username"}
      placeHolderTextColor = 'black'
@@ -41,6 +45,7 @@ export default class LoginPage  extends React.Component{
 
 
       <TextInput
+      underlineColorAndroid='transparent'
       onChangeText={(text) => this.setState({Password: text })}
       placeholder = {"Password"}
       secureTextEntry = {true}

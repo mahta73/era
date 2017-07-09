@@ -22,23 +22,34 @@ export default class StudentMarkPage extends React.Component{
     this._marktodatabase = this._marktodatabase.bind(this);
   }
 
-  _marktodatabase(){
+  _marktodatabase(markNumber){
   firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').push().set(this.state.mark);
-  }
+  alert('mark submitted');
+}
 
   render(){
     return(
-      <View style={Styles.container}>
-       <Text>{this.props.studnetName}</Text>
+      <View style={Styles.container2} >
+        <View style={Styles.Row}>
+          <Text  style={Styles.nameStyle}>
+            {this.props.studnetName}
+          </Text>
+          <TextInput
+            underlineColorAndroid='transparent'
+            placeholder={'mark'}
+            onChangeText={(number)=>this.setState({mark: number})}
+            style={Styles.inputMark}
+            editable = {true}
+            maxLength = {3}
+            value={this.state.mark}
+            />
+          <Button
+            onPress={this._marktodatabase}
+            title={'confirm'}
+            color={'blue'}
+            />
+        </View>
 
-       <TextInput
-         onChangeText = {(mark) => this.setState({mark})}
-       />
-       <Button
-        onPress={this._marktodatabase}
-        title="confirm"
-        color="green"
-       />
       </View>
     );
   }

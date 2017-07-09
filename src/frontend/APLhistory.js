@@ -41,11 +41,20 @@ export default class APLhistory extends React.Component{
   render(){
     return(
       <View style={Styles.container}>
-      <Text>{this.props.studnetName}</Text>
-      <Text>Number of Present : {this.state.NumberOfPresent}</Text>
-      <Text>Number of Apsent : {this.state.NumberOfAbsent}</Text>
-      <Text>Number of Late : {this.state.NumberOfLate}</Text>
-
+        <View style={Styles.container2}>
+          <Text style={Styles.nameStyle}>
+            {this.props.studnetName}
+          </Text>
+          <Text style={Styles.resultView}>
+            Present : {this.state.NumberOfPresent}
+          </Text>
+          <Text style={Styles.resultView}>
+            Absent : {this.state.NumberOfAbsent}
+          </Text>
+          <Text style={Styles.resultView}>
+            Late : {this.state.NumberOfLate}
+          </Text>
+        </View>
       </View>
     );
   }

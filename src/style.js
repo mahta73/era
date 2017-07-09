@@ -11,12 +11,17 @@ const Styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ebebef',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    alignItems:'center',
+    justifyContent:'center',
   },
   ButtonView : {
     color:'white',
     fontSize: 18,
+  },
+  ButtonTextView : {
+    color:'white',
+    fontWeight: 'bold',
   },
   Button: {
     backgroundColor:"#599bad",
@@ -38,20 +43,75 @@ const Styles = StyleSheet.create({
   },
   inputStyle:{
     marginTop:40,
-    margin:10,
+    marginLeft:10,
+    marginRight:10,
     padding:10,
-    height: 40,
     borderColor: 'gray',
     borderWidth: 1,
+    width:350,
+    height:40,
+    alignSelf: 'center',
   },
-  Row: {
-    flex: 1,
-    flexDirection: 'row',
+  inputMark:{
+    padding:10,
+    height: 40,
+    width:50,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginRight:40,
+    flex:1,
   },
-  detailRow: {
-    flex: 1,
-    flexDirection: 'row',
+  nameStyle:{
+    color: "#599bad",
+    flex:2,
+    paddingLeft:10,
   },
+  presentStyle:{
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:'#32CD32',
+    borderBottomRightRadius:20,
+    borderBottomLeftRadius:20,
+    borderTopRightRadius:20,
+    borderTopLeftRadius:20,
+    flex:1,
+    margin:5,
+
+  },
+  absentStyle:{
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:'#FF0000',
+    borderBottomRightRadius:20,
+    borderBottomLeftRadius:20,
+    borderTopRightRadius:20,
+    borderTopLeftRadius:20,
+    flex:1,
+    margin:5,
+
+  },
+  lateStyle:{
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:'#c97a4f',
+    borderBottomRightRadius:20,
+    borderBottomLeftRadius:20,
+    borderTopRightRadius:20,
+    borderTopLeftRadius:20,
+    flex:1,
+    margin:5,
+  },
+  resultView:{
+    flex:1,
+    margin:2,
+  },
+  Row:{
+  flex:1,
+  flexDirection: 'row',
+  alignItems:'center',
+  justifyContent:'center',
+},
+
 });
 
 export default Styles;

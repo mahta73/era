@@ -12,7 +12,7 @@ constructor(props){
 render(){
   return(
     <View style={Styles.container}>
-    <StudentBox studnetName = 'Mahta Rezayazdi'/>
+      <StudentBox studnetName = 'Mahta Rezayazdi'/>
     </View>
   );
 }

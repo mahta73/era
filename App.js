@@ -13,7 +13,7 @@ import studentmark from './src/frontend/studentmark';
 import studentBox from './src/frontend/studentBox';
 
 const ProjectHome = StackNavigator({
-//  Home :{screen : LoginPage},
+  Home :{screen : LoginPage},
   Degree:{screen: Degree},
   Classes:{screen: Classes},
   studentMainPage:{screen: StudentMainPage},

@@ -6,11 +6,6 @@ import config from '../backend/firebase';
 import * as firebase from 'firebase';
 import Styles from '../style';
 
-
-
-
-
-
 const database = firebase.database();
 
 export default class StudentBox extends React.Component{
@@ -18,7 +13,7 @@ export default class StudentBox extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      displayname:firebase.auth().currentUser.uid,
+      displayname: firebase.auth().currentUser.uid,
       nameOfStudent : this.props.studnetName,
     };
     this._present = this._present.bind(this);
@@ -70,25 +65,43 @@ alert('Late');
       <View style={Styles.container2}>
 
 
-      <Text>{this.props.studnetName}</Text>
+      <Text style={Styles.nameStyle}>{this.props.studnetName}</Text>
 
       <TouchableHighlight
+        style={Styles.presentStyle}
       underlayColor = {'transparent'}
       onPress = {this._present}
-      ><Text>Present</Text>
+      >
+      <Text
+        style={Styles.ButtonTextView}
+        >
+        Present
+      </Text>
       </TouchableHighlight>
 
       <TouchableHighlight
+      style={Styles.absentStyle}
       underlayColor = {'transparent'}
       onPress = {this._absent}
-      ><Text>Apsent</Text>
+      >
+      <Text
+        style={Styles.ButtonTextView}
+        >
+        Absent
+      </Text>
       </TouchableHighlight>
 
 
       <TouchableHighlight
+      style={Styles.lateStyle}
       underlayColor = {'transparent'}
       onPress = {this._late}
-      ><Text>Late</Text>
+      >
+      <Text
+        style={Styles.ButtonTextView}
+        >
+        Late
+      </Text>
       </TouchableHighlight>
 
       </View>
