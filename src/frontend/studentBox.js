@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
-import { StackNavigator,TabNavigator } from 'react-navigation';
-
+import { Text, View, TouchableHighlight} from 'react-native';
 import config from '../backend/firebase';
 import * as firebase from 'firebase';
 import Styles from '../style';
@@ -31,7 +29,7 @@ export default class StudentBox extends React.Component{
 
     return firebase.database().ref().update(updates);
 });
- alert('PRESENT');
+ alert(this.state.nameOfStudent + ' is PRESENT');
 }
 
 
@@ -45,7 +43,7 @@ _absent(){
    return firebase.database().ref().update(updates);
 
 });
-alert('Apsent');
+ alert(this.state.nameOfStudent + ' is Apsent');
 }
 
 _late(){
@@ -58,10 +56,11 @@ _late(){
    return firebase.database().ref().update(updates);
 
 });
-alert('Late');
+ alert(this.state.nameOfStudent + ' is Late');
 }
   render(){
     return(
+
       <View style={Styles.container2}>
 
 

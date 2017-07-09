@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,Button, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
+import { ScrollView , View} from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import StudentBox from './studentBox';
 import APL from './APL';

@@ -14,6 +14,16 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems:'center',
     justifyContent:'center',
+    marginTop : 30,
+  },
+  container3:{
+    flex: 1,
+    backgroundColor: '#ebebef',
+    alignItems: 'center',
+    flexDirection: 'column',
+    alignItems:'center',
+    justifyContent:'center',
+    marginTop : 2,
   },
   ButtonView : {
     color:'white',
@@ -121,7 +131,10 @@ scrollView:{
   borderWidth: 1,
   width:100,
   height:40,
-  marginRight:10,
+  marginRight:15,
+  flex:1,
+  paddingTop:10,
+  paddingRight:10,
 
 },
 

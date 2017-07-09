@@ -1,9 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight, Button} from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import StudentBox from './studentBox';
+import {Text, View,TextInput, TouchableHighlight, Button} from 'react-native';
 import config from '../backend/firebase';
-import APLhistory from './APLhistory';
 import * as firebase from 'firebase';
 import Styles from '../style';
 
@@ -24,7 +21,7 @@ export default class StudentMarkPage extends React.Component{
 
   _marktodatabase(markNumber){
   firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').push().set(this.state.mark);
-  alert('mark submitted');
+  alert(this.state.nameOfStudent + ' got ' + this.state.mark);
 }
 
   render(){
