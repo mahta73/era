@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
-import { TabNavigator } from 'react-navigation';
-import StudentBox from './studentBox';
+import { Text, View} from 'react-native';
 import config from '../backend/firebase';
 import * as firebase from 'firebase';
 import Styles from '../style';
@@ -15,20 +13,22 @@ constructor(props){
     displayname:firebase.auth().currentUser.uid,
     mark : [],
   }
-}
-
-componentWillMount(){
-const that = this;
-firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').on('child_added' , function getData(data){
-  that.setState({mark:[...that.state.mark, data.val() + ' ']});
-});
+  const that = this;
+  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').on('child_added' , function getData(data){
+    that.setState({mark:[...that.state.mark, data.val() + ' ']});
+  });
 
 }
+
 render(){
   return(
-    <View>
+    <View style={Styles.container3}>
+    <View style={{marginTop:2}}>
     <Text>{this.props.studnetName}</Text>
+    </View>
+    <View style={{marginTop:2}}>
     <Text>{this.state.mark}</Text>
+    </View>
     </View>
   );
 }

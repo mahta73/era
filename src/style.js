@@ -14,6 +14,16 @@ const Styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems:'center',
     justifyContent:'center',
+    marginTop : 30,
+  },
+  container3:{
+    flex: 1,
+    backgroundColor: '#ebebef',
+    alignItems: 'center',
+    flexDirection: 'column',
+    alignItems:'center',
+    justifyContent:'center',
+    marginTop : 2,
   },
   ButtonView : {
     color:'white',

@@ -1,7 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableHighlight} from 'react-native';
-import { TabNavigator } from 'react-navigation';
-import StudentBox from './studentBox';
+import { Text, View} from 'react-native';
 import config from '../backend/firebase';
 import * as firebase from 'firebase';
 import Styles from '../style';
