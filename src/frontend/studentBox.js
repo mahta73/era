@@ -13,6 +13,7 @@ export default class StudentBox extends React.Component{
     this.state = {
       displayname: firebase.auth().currentUser.uid,
       nameOfStudent : this.props.studnetName,
+      whichClass : this.props.Wclass,
     };
     this._present = this._present.bind(this);
     this._absent = this._absent.bind(this);
@@ -23,9 +24,10 @@ export default class StudentBox extends React.Component{
   _present(){
    const nameForUpdate = this.state.nameOfStudent;
    const displaynamedForUpdate = this.state.displayname;
-  firebase.database().ref().child('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Present').once("value", function(snap) {
+   const whichClassisSelected = this.props.Wclass;
+  firebase.database().ref('Class/').child( this.state.whichClass + '/' + this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Present').once("value", function(snap) {
   const updates = {};
-  updates['Class A/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Present'] = snap.val()+1;
+  updates['Class/'+ whichClassisSelected +'/'+ displaynamedForUpdate  +'/Student/'+ nameForUpdate + '/Present'] = snap.val()+1;
 
     return firebase.database().ref().update(updates);
 });
@@ -36,22 +38,22 @@ export default class StudentBox extends React.Component{
 _absent(){
   const nameForUpdate = this.state.nameOfStudent;
   const displaynamedForUpdate = this.state.displayname;
- firebase.database().ref().child('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Apsent').once("value", function(snap) {
+ firebase.database().ref('Class/').child(this.state.whichClass + '/' + this.state.displayname +'/'+'/Student/'+ this.state.nameOfStudent + '/Apsent').once("value", function(snap) {
  const updates = {};
- updates['Class A/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Apsent'] = snap.val()+1;
+ updates['Class/' + whichClassisSelected + '/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Apsent'] = snap.val()+1;
 
    return firebase.database().ref().update(updates);
 
 });
- alert(this.state.nameOfStudent + ' is Apsent');
+ alert(this.state.nameOfStudent + ' is Absent');
 }
 
 _late(){
   const nameForUpdate = this.state.nameOfStudent;
  const displaynamedForUpdate = this.state.displayname;
- firebase.database().ref().child('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').once("value", function(snap) {
+ firebase.database().ref('Class/').child( this.state.whichClass + '/' + this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').once("value", function(snap) {
  const updates = {};
- updates['Class A/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Late'] = snap.val()+1;
+ updates['Class/'+ whichClassisSelected + '/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Late'] = snap.val()+1;
 
    return firebase.database().ref().update(updates);
 

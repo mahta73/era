@@ -12,66 +12,66 @@ render(){
   return(
    <ScrollView>
 
-    <StudentBox  studnetName = 'Peyman Ghazvini'/>
+    <StudentBox  studnetName = 'Peyman Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Saman Ghazvini'/>
+    <StudentBox  studnetName = 'Saman Ghazvini' Wclass='B'/>
 
 
 
-    <StudentBox   studnetName = 'Mehrad Rezayazdi'/>
+    <StudentBox   studnetName = 'Mehrad Rezayazdi' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mahta Rezayazdi'/>
+    <StudentBox  studnetName = 'Mahta Rezayazdi' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Peyman2 Ghazvini'/>
+    <StudentBox  studnetName = 'Peyman2 Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Saman2 Ghazvini'/>
+    <StudentBox  studnetName = 'Saman2 Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mehrad2 Rezayazdi'/>
+    <StudentBox  studnetName = 'Mehrad2 Rezayazdi' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mahta2 Rezayazdi'/>
+    <StudentBox  studnetName = 'Mahta2 Rezayazdi' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Peyman3 Ghazvini'/>
+    <StudentBox  studnetName = 'Peyman3 Ghazvini'Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Saman3 Ghazvini'/>
+    <StudentBox  studnetName = 'Saman3 Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mehrad3 Rezayazdi'/>
+    <StudentBox  studnetName = 'Mehrad3 Rezayazdi' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mahta3 Rezayazdi'/>
+    <StudentBox  studnetName = 'Mahta3 Rezayazdi' Wclass='A'/>
 
 
-    <StudentBox  studnetName = 'Peyman4 Ghazvini'/>
-
-
-
-    <StudentBox  studnetName = 'Saman4 Ghazvini'/>
+    <StudentBox  studnetName = 'Peyman4 Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mehrad4 Rezayazdi'/>
+    <StudentBox  studnetName = 'Saman4 Ghazvini' Wclass='A'/>
 
 
 
-    <StudentBox  studnetName = 'Mahta4 Rezayazdi'/>
+    <StudentBox  studnetName = 'Mehrad4 Rezayazdi' Wclass='A'/>
+
+
+
+    <StudentBox  studnetName = 'Mahta4 Rezayazdi' Wclass='A'/>
 
     </ScrollView>
   );
