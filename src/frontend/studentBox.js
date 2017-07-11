@@ -38,6 +38,7 @@ export default class StudentBox extends React.Component{
 _absent(){
   const nameForUpdate = this.state.nameOfStudent;
   const displaynamedForUpdate = this.state.displayname;
+ const whichClassisSelected = this.props.Wclass;
  firebase.database().ref('Class/').child(this.state.whichClass + '/' + this.state.displayname +'/'+'/Student/'+ this.state.nameOfStudent + '/Apsent').once("value", function(snap) {
  const updates = {};
  updates['Class/' + whichClassisSelected + '/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Apsent'] = snap.val()+1;
@@ -51,6 +52,7 @@ _absent(){
 _late(){
   const nameForUpdate = this.state.nameOfStudent;
  const displaynamedForUpdate = this.state.displayname;
+  const whichClassisSelected = this.props.Wclass;
  firebase.database().ref('Class/').child( this.state.whichClass + '/' + this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').once("value", function(snap) {
  const updates = {};
  updates['Class/'+ whichClassisSelected + '/' + displaynamedForUpdate +'/Student/'+ nameForUpdate + '/Late'] = snap.val()+1;

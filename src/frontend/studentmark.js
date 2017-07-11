@@ -14,13 +14,14 @@ export default class StudentMarkPage extends React.Component{
     this.state = {
       displayname:firebase.auth().currentUser.uid,
       nameOfStudent : this.props.studnetName,
+      whichClass : this.props.Wclass,
       mark : '',
     }
     this._marktodatabase = this._marktodatabase.bind(this);
   }
 
   _marktodatabase(markNumber){
-  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').push().set(this.state.mark);
+  firebase.database().ref('Class/'+this.state.whichClass + '/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').push().set(this.state.mark);
   alert(this.state.nameOfStudent + ' got ' + this.state.mark);
 }
 

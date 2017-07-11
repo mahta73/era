@@ -13,63 +13,63 @@ render(){
 
     <ScrollView>
 
-    <APLhistory  studnetName = 'Peyman Ghazvini'/>
+    <APLhistory  studnetName = 'Peyman Ghazvini' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Saman Ghazvini'/>
+    <APLhistory  studnetName = 'Saman Ghazvini' Wclass='B'/>
 
 
 
-    <APLhistory   studnetName = 'Mehrad Rezayazdi'/>
+    <APLhistory   studnetName = 'Mehrad Rezayazdi' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Mahta Rezayazdi'/>
+    <APLhistory  studnetName = 'Mahta Rezayazdi' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Peyman2 Ghazvini'/>
+    <APLhistory  studnetName = 'Peyman2 Ghazvini' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Saman2 Ghazvini'/>
+    <APLhistory  studnetName = 'Saman2 Ghazvini' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Mehrad2 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mehrad2 Rezayazdi' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Mahta2 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mahta2 Rezayazdi' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Peyman3 Ghazvini'/>
+    <APLhistory  studnetName = 'Peyman3 Ghazvini' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Saman3 Ghazvini'/>
+    <APLhistory  studnetName = 'Saman3 Ghazvini' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Mehrad3 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mehrad3 Rezayazdi' Wclass='A'/>
 
 
 
-    <APLhistory  studnetName = 'Mahta3 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mahta3 Rezayazdi' Wclass='A'/>
 
 
-    <APLhistory  studnetName = 'Peyman4 Ghazvini'/>
+    <APLhistory  studnetName = 'Peyman4 Ghazvini' Wclass='A'/>
 
 
-    <APLhistory  studnetName = 'Saman4 Ghazvini'/>
+    <APLhistory  studnetName = 'Saman4 Ghazvini' Wclass='A'/>
 
 
-    <APLhistory  studnetName = 'Mehrad4 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mehrad4 Rezayazdi' Wclass='A'/>
 
 
-    <APLhistory  studnetName = 'Mahta4 Rezayazdi'/>
+    <APLhistory  studnetName = 'Mahta4 Rezayazdi' Wclass='A'/>
 
 
     </ScrollView>

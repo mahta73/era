@@ -13,10 +13,11 @@ constructor(props){
   this.state = {
     nameOfStudent : this.props.studnetName,
     displayname:firebase.auth().currentUser.uid,
+    whichClass : this.props.Wclass,
     mark : [],
   }
   const that = this;
-  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').on('child_added' , function getData(data){
+  firebase.database().ref('Class/'+this.state.whichClass + '/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Mark').on('child_added' , function getData(data){
     that.setState({mark:[...that.state.mark, data.val() + ' ']});
   });
 

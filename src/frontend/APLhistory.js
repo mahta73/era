@@ -11,6 +11,7 @@ export default class APLhistory extends React.Component{
     this.state = {
       nameOfStudent : this.props.studnetName,
       displayname:firebase.auth().currentUser.uid,
+      whichClass : this.props.Wclass,
       NumberOfPresent : 0,
       NumberOfAbsent : 0,
       NumberOfLate : 0
@@ -20,17 +21,17 @@ export default class APLhistory extends React.Component{
 
   componentWillMount(){
   const that = this;
-  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Present').on('value' , getPresent);
+  firebase.database().ref('Class/'+this.state.whichClass + '/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Present').on('value' , getPresent);
   function getPresent(data){
     that.setState({NumberOfPresent : data.val()});
   }
 
-  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Apsent').on('value' , getApsent);
+  firebase.database().ref('Class/'+this.state.whichClass + '/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Apsent').on('value' , getApsent);
   function getApsent(data){
     that.setState({NumberOfAbsent : data.val()});
   }
 
-  firebase.database().ref('Class A/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').on('value' , getLate);
+  firebase.database().ref('Class/'+this.state.whichClass + '/'+ this.state.displayname +'/Student/'+ this.state.nameOfStudent + '/Late').on('value' , getLate);
   function getLate(data){
     that.setState({NumberOfLate : data.val()});
   }

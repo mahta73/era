@@ -19,67 +19,67 @@ render(){
   return(
     <ScrollView>
 
-    <Markhistory  studnetName = 'Peyman Ghazvini'/>
+    <Markhistory  studnetName = 'Peyman Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Saman Ghazvini'/>
+    <Markhistory  studnetName = 'Saman Ghazvini' Wclass='B'/>
 
 
 
-    <Markhistory   studnetName = 'Mehrad Rezayazdi'/>
+    <Markhistory   studnetName = 'Mehrad Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mahta Rezayazdi'/>
+    <Markhistory  studnetName = 'Mahta Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Peyman2 Ghazvini'/>
+    <Markhistory  studnetName = 'Peyman2 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Saman2 Ghazvini'/>
+    <Markhistory  studnetName = 'Saman2 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mehrad2 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mehrad2 Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mahta2 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mahta2 Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Peyman3 Ghazvini'/>
+    <Markhistory  studnetName = 'Peyman3 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Saman3 Ghazvini'/>
+    <Markhistory  studnetName = 'Saman3 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mehrad3 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mehrad3 Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mahta3 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mahta3 Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Peyman4 Ghazvini'/>
+    <Markhistory  studnetName = 'Peyman4 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Saman4 Ghazvini'/>
+    <Markhistory  studnetName = 'Saman4 Ghazvini' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mehrad4 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mehrad4 Rezayazdi' Wclass='A'/>
 
 
 
-    <Markhistory  studnetName = 'Mahta4 Rezayazdi'/>
+    <Markhistory  studnetName = 'Mahta4 Rezayazdi' Wclass='A'/>
 
     </ScrollView>
   );

@@ -122,7 +122,7 @@ const Styles = StyleSheet.create({
   justifyContent:'center',
 },
 markHistoryView:{
-  color:'#32CD32',
+  color:'#00008B',
   justifyContent:'center',
   alignItems: 'center',
 },
